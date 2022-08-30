@@ -48,7 +48,7 @@ while True:
    fps = 1/(cTime-pTime)
    pTime = cTime
    # printing fps
-   cv2.putText(img,str(int(fps)),(10,70), cv2.FONT_HERSHEY_PLAIN,2,(255,0,255),2)
+   cv2.putText(img,f'FPS: {int(fps)}',(10,50), cv2.FONT_HERSHEY_PLAIN,2,(255,0,255),2)
    cv2.imshow("Video",img)
    if cv2.waitKey(1) & 0xFF == ord('q'):
      break
